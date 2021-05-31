@@ -2,9 +2,13 @@
 const ShoppingList = [];
 
 // defining our documents elements
-const input = document.getElementById("input");
+const form = document.getElementById("form");
 const addBtn = document.getElementById("add-btn");
 const shoppingListContainer = document.getElementById("shopping-list-container");
+
+function addItemHandler(e) {
+  e.preventDefault();
+}
 
 // This function will create a list of inputs with a remove button
 function updateDom() {
@@ -25,7 +29,7 @@ function updateDom() {
       // adding our element to the shopping list container
       shoppingListContainer.appendChild(liElement)
       // reset after input
-      input.value = "";
+      form.value = "";
     }
   }
 
@@ -40,10 +44,10 @@ function updateDom() {
 
 //  The following function adds our list 
   function addShopping() {
-    ShoppingList.push(input.value)
+    ShoppingList.push(form.value)
     updateDom()
   }
   
   
-  addBtn.addEventListener("click", addShopping)
+   addBtn.addEventListener("submit", addShopping)
   

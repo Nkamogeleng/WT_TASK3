@@ -18,8 +18,12 @@
     
     <section id="Shopping-list" class = "Shopping-list">
         
-        <input id="input" type="text" class="input" >
-        <button id="add-btn" class="add-btn">Add item</button>
+      <form id = "form"> 
+        <input type="input" name="title" id="title" placeholder="Item"/>
+        <input type="number" name="quantity" id="title" placeholder="QTY"/>
+        <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Description"></textarea>
+       
+        <button id="add-btn" class="add-btn" form="form" type="submit" value="Submit">Add item</button>
 
 
           <div >

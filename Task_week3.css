@@ -48,6 +48,10 @@ div {
 
 
 /* input */
+form {
+    display:grid;
+}
+
 
 
 footer {
@@ -56,3 +60,4 @@ footer {
     padding: 50px 20px;
     bottom: 0px;
 }
+
